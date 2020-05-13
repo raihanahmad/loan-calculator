@@ -29,7 +29,7 @@ function loanCalculator(e) {
   const monthly = (principal * x * calculateInterest) / (x - 1);
 
   // Assign Calculate Value
-  if (isFinite(monthly.toFixed(4)) {
+  if (isFinite(monthly) {
     monthlyPayment.value = monthly.toFixed(2);
     totalPayment.value = (monthly * calculatePayment).toFixed(2);
     totalInterest.value = ((monthly * calculatePayment) - principal).toFixed(2);
